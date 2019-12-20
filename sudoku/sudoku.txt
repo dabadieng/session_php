@@ -1,0 +1,32 @@
+1. Tableau à 2 dimensions fixées : Créer un tableau php à 2 dimensions dont les indices vont de 0 à 8 pour chaque dimensions (équivalent des coordonnées x et y).
+Les valeurs stockées dans le tabelau sont tirés au hasard entre 1 et 9 : $tableau[x][y]=rand(1,9);
+
+2. Tableau à 2 dimensions paramétrées : Créer une fonction qui prend en parametres $nbl et $nbc et qui génère un tableau avec $nbl lignes et $nbc colonnes.
+
+3. Affichage HTML : Créer une fonction qui prend en parametre un tableau php à 2 dimensions et qui l'affiche sous la forme d'un tableau HTML.
+
+4. Session : Mémoriser en variable de session le tableau généré.
+
+5. Créer une fonction qui prend en parametre un tableau à 1 dimension et qui remplace les doublons dans ce tableau par la valeur 0.
+
+6. Créer une fonction qui prend en parametre un tableau à 2 dimensions et un numéro de colonne et qui met à 0 tous les éléments de cette colonne.
+
+7. Sudoku :
+a. Initialiser une grille de sudoku.
+on donne la grille de sudoku suivante (les zéros correspondent aux cases vides dont il faut trouver la valeur) :
+	$grille=[];
+	$grille[0]=array(3,0,0,7,0,2,4,8,1);
+	$grille[1]=array(0,6,0,3,0,0,0,0,9);
+	$grille[2]=array(0,2,0,0,4,0,5,0,6);
+	$grille[3]=array(7,4,0,0,0,0,0,0,0);
+	$grille[4]=array(0,0,0,9,0,8,0,0,0);
+	$grille[5]=array(0,0,0,0,0,0,0,1,2);
+	$grille[6]=array(6,0,3,0,2,0,0,9,0);
+	$grille[7]=array(5,0,0,0,0,3,0,2,0);
+	$grille[8]=array(2,7,8,5,0,6,0,0,3);
+b. remplacer les 0 par la liste des valeurs possibles sous la forme "1;2;3;4;5;6;7;8;9".
+c. faire une fonction qui traite chaque ligne de manière à réduire la liste des valeurs possibles (une ligne ne peut avoir de doublon).
+d. Faire une fonction qui traite chaque colonne.
+e. Faire une fonction qui traite chaque carré 3x3.
+	
+

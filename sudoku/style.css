@@ -1,0 +1,22 @@
+body {
+    font-face:Arial;
+    font-size:20px;
+}
+
+table, tr, td {
+    border: 2px solid #333;
+}
+
+tr:nth-child(3n) {
+    background-color: khaki;
+}
+
+td {
+    width:50px;
+    height:50px;
+    text-align: center;
+}
+
+.vert {
+    border : 2px solid green;
+}

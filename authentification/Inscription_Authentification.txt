@@ -1,0 +1,19 @@
+Une page "private.php" n'est accessible qu'aux personnes authentifiées.
+Une personne est authentifié s'il existe une variable de session $_SESSION["ok"].
+Si un utilisateur non autentifiée tente d'accèder à cette page, il est redirigé vers la page "authentification.php" (qui possède également un lien hypertexte "inscription.php").
+
+Créer un système d'inscription et d'authentification.
+
+1. Page d'inscription :
+Un formulaire permet à l'utilisateur de définir un login et un mot de passe.
+Le système récupère les données saisies, crypte le mot de passe et écrit ces données dans un fichier Annuaire.txt
+L'utilisateur est redirigé sur la page d'authentification.
+
+2. Page d'authentification
+Un formulaire permet à l'utilisateur de saisir son login et mot de passe.
+Le système récupère les données et recherche le couple de valeurs correspondantes dans le fichiers annuaire.txt.
+Si ce couple existe alors la variable de session $_SESSION["ok"] est créée et l'utilisateur est redirigé vers le page "private.php".
+sinon il renvoie à la page d'authentification avec un message d'erreur.
+
+3. Sur le formulaire d'authentification ajouter une case à cocher "se souvenir de moi".
+Si cochée, la prochainde fois que l'utilisateur voudra accéder au site, il sera automatiquement authentifié et dirigé sur la page d'accueil.

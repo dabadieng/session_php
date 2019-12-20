@@ -1,0 +1,60 @@
+<?php 
+/*Développez un jeu de "pendu".
+On utilisera le fichier "nom.php" qui contient un tableau de nom.
+Le programme tirera au hasard un mot dans le tableau.
+Il faudra supprimer l'article dans ce mot.
+
+Le joueur devra tenter de deviner ce mot en proposant des lettres.
+Il disposera d'un nombre de coups égal au nombre de caractères du mot.
+exemple : le mot "pasteque" devra être deviné en moins de 8 coups.
+
+La page Web affichera des tirets à la place des lettres.
+--------
+A chauqe lettre proposée par le joueur, celles-ci seront positionné dans le mot.
+lettre proposé : a
+-a------
+
+lettre proposé : a,i
+-a------
+
+lettre proposé : a,i,e
+-a--e--e
+*/
+
+
+if (isset($_POST["btSubmit"])) {
+	extract($_POST);
+} 
+else
+{
+	$lettre="";
+}
+
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Pendu</title>
+    </head>	
+	<style>
+		body {
+			font-face:Arial;
+			font-size:20px;
+		}
+		
+		form {
+			border: 2px solid #333;
+			background-color:#ADE;
+		}
+	</style>	
+    <body>
+		<form method="post"> 
+			<p>
+				<label for="lettre">Saisir une lettre : </label>
+				<input type="text" name="lettre" id="lettre" value="<?=$lettre?>" size="3" maxlength="1" />
+			</p>			
+			<p><input type="submit" value="Envoyer" name="btSubmit" /></p>
+		</form>			
+    </body>
+</html>

@@ -1,0 +1,11 @@
+Le jeu du QuiPerdGagne se joue à deux joueurs.
+Au départ le score de chaque joueur est à 0.
+Chaque tours se déroule ainsi :
+	- Chaque joueur choisit un nombre entre 1 et 9.
+	- le joueur qui a le nombre le plus grand ajoute ce nombre à son score.
+	- le joueur qui a le nombre le plus petit ajoute ce nombre x 2 à son score.
+
+Le premier à atteindre un score de 100 gagne la partie.
+
+Faire une application web qui oppose un joueur humain à l'ordinateur.
+L'ordinateur choisira son nombre aléatoirement entre 1 et 9.

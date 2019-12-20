@@ -1,0 +1,25 @@
+﻿Jeu de poker de type Bandits Manchots
+-------------------------------------
+
+Préalables :
+1. Comment représenter une carte ?
+2. Comment représenter un jeu de carte ?
+3. Mélanger un jeu de carte.
+
+Le jeu de poker : 
+1. Le joueur mise et demande une main
+2. l'ordinateur tire 5 cartes qu'il envoie au joueur.
+3. Le joueur bloque les cartes qu'il souhaite garder et mise.
+4. l'ordinateur remplace les cartes non bloqués et calcul les gains.
+5. Le joueur recommence une partie cf 1.
+
+Grille des gains :
+valet ou plus	1x la mise
+2 paires	2x
+brelan		3x	3 cartes de mème valeur 
+quinte		4x	
+couleur		6x	5 cartes de la mème couleur 
+full		9x	UN BREULON + UNE PAIRE
+carré		25x	4 CARTES IDDENTIQUE 
+quinte flush	50x	une quinte ou toutes les cartes sont de la mème couleur 
+quinte flush royale 250x	

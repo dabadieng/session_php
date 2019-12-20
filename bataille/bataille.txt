@@ -1,0 +1,4 @@
+Soit une jeu de 52 cartes.
+créer un jeu de bataille ouverte entre un utilisateur et l'ordinateur.
+L'ordinateur choisira au hasard une carte dans son jeu.
+L'humain pourra choisir la carte de son choix.
